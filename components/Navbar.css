@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700&display=swap');
+
+*{
+    margin:0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+.navbar-nav{
+    display: grid;
+    grid-template-columns: 15% 65% 20%;
+    align-items: center;
+    padding: .5rem 3rem;
+    height: 5.5rem;
+}
+.navbar-nav a{
+    justify-self: start;
+    cursor: pointer;
+}
+.navbar__{
+    display: flex;
+    gap: 2.5rem;
+}
+.subnav{
+    width: fit-content;
+    height: fit-content;
+    background: #fff;
+    position: absolute;
+    margin: 1rem 0rem;
+    left: 11%;
+    padding: 1.5rem 2rem ;
+    border-radius: .75rem;
+    box-shadow: 0px 2px 30px rgba(0,0,0,0.2);
+}
+.subnav ul a img{
+  margin-right: 8px;
+}
+
+.toggle_subnav_1 ul{
+    display: flex;
+    gap: .75rem;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.show_subnav1{
+    display: flex;
+}
+.hide_subnav1{
+    display: none;
+}
+.toggle_subnav_2{
+    left: 26%;
+}
+.toggle_subnav_2 ul{
+    display: flex;
+    gap: .75rem;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.show_subnav2{
+    display: flex;
+}
+.hide_subnav2{
+    display: none;
+}
+.navbar__ li a{
+    color: hsl(0, 0%, 41%);
+}
+.navbar__ li a:hover{
+    color: hsl(0, 0%, 0%);
+}
+.navbar__ li a .arrow_down:hover{
+    color: #000;
+}
+.btns{
+    display: flex;
+    gap: 2rem;
+    justify-self: end;
+}
+.btns a {
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.3rem;
+    padding: .75rem 1rem;
+    border: 2px solid hsl(0, 0%, 41%) ;
+    color: hsl(0, 0%, 41%);
+    border-radius: .75rem;
+    background-color: transparent;
+}
+
+.btns .btn_login{
+    border: 2px solid transparent;
+}
+.btns .btn_login:hover{
+    color:#000;
+}
+.btns .btn_register:hover{
+    color:#000;
+    border: 2px solid hsl(0, 0%, 0%) ;
+}
+.toggle_menu_btns{
+    display: none;
+}
+
+@media (max-width:940px) {
+    .navbar-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem 3rem;
+        height: 5.5rem;
+    }
+    .navbar__{
+       position: absolute;
+        top: 0px;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2rem;
+        transition: all 0.3s ease;
+        padding: 6rem 2rem;
+        box-shadow: -2px 1px 5px rgba(0,0,0,0.1);
+    }
+   .show_nav{
+    display: flex;
+   }
+   .hide_nav{
+    display: none;
+   }
+
+   .subnav{
+    width: fit-content;
+    height: fit-content;
+    background: rgb(255, 255, 255);
+    margin: 1rem 0rem;
+    left: 11%;
+    position: relative;
+    box-shadow: none;
+    padding: 1rem 1rem ;
+}
+.toggle_subnav_1 ul{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+.show_subnav1{
+    display: flex;
+}
+.hide_subnav1{
+    display: none;
+}
+.toggle_subnav_2{
+    left: 11%;
+}
+.toggle_subnav_2 ul{
+    display: flex;
+    gap: .75rem;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.show_subnav2{
+    display: flex;
+}
+.hide_subnav2{
+    display: none;
+}
+
+
+    .navbar__ li a{
+        color: hsl(0, 0%, 41%);
+    }
+    .btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        position: absolute;
+        left: 65%;
+        top: 45%;
+    }
+    .pos_1{
+        top: 80%;
+    }
+    .btns a {
+        width: fit-content;
+        height: fit-content;
+        font-size: 1.3rem;
+        padding: .75rem 2.5rem;
+        border: 2px solid hsl(0, 0%, 41%) ;
+        color: hsl(0, 0%, 41%);
+        border-radius: .75rem;
+        background-color: transparent;
+    }
+    .show_btns{
+        display: flex;
+    }
+    .hide_btns{
+        display: none;
+    }
+    
+    .toggle_menu_btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .toggle_menu_btns{
+        border: none;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+        z-index: 1;
+        position: relative;
+    }
+    .toggle_menu_btns .open_nav, .close_nav{
+        font-size: 2rem;
+    }
+    
+}
+@media (max-width:375px) {
+
+    .navbar-nav{
+       
+        padding: .5rem 1.5rem;
+     
+    }
+    .navbar__{
+        top: 0px;
+        left: 40%;
+        width: 60%;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2rem;
+        transition: all 0.3s ease;
+        padding: 6rem 2rem;
+        box-shadow: -2px 1px 5px rgba(0,0,0,0.1);
+    }
+    .show_nav{
+        display: flex;
+       }
+       .hide_nav{
+        display: none;
+       }
+       .subnav{
+        width: fit-content;
+        height: fit-content;
+        background: rgb(255, 255, 255);
+        margin: 0rem 0rem;
+        left: 11%;
+        position: relative;
+        box-shadow: none;
+        padding: 1.5rem 1rem 0rem ;
+    }
+    .toggle_subnav_1 ul{
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+    }
+    .show_subnav1{
+        display: flex;
+    }
+    .hide_subnav1{
+        display: none;
+    }
+    .toggle_subnav_2{
+        left: 11%;
+    }
+    .toggle_subnav_2 ul{
+        display: flex;
+        gap: .75rem;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .show_subnav2{
+        display: flex;
+    }
+    .hide_subnav2{
+        display: none;
+    }
+   
+    .btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        position: absolute;
+        left: 50%;
+        top: 45%;
+    }
+    .pos_1{
+        top: 78%;
+    }
+    .btns a {
+        width: fit-content;
+        height: fit-content;
+        font-size: 1rem;
+        padding: .75rem 2.5rem;
+        border: 2px solid hsl(0, 0%, 41%) ;
+        color: hsl(0, 0%, 41%);
+        border-radius: .75rem;
+        background-color: transparent;
+    }
+    .show_btns{
+        display: flex;
+    }
+    .hide_btns{
+        display: none;
+    }
+
+}

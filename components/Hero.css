@@ -1,0 +1,122 @@
+.hero{
+    padding: 3rem 13rem 0rem;
+}
+.main{
+    display: flex;
+    gap: 6rem;
+}
+.mobile_image{
+    display: none;
+}
+.left {
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.left h1{
+    font-size: 4.3rem;
+    font-weight: 700;
+}
+.left p{
+    color: hsl(0, 0%, 41%);
+}
+.left .btn_learn{
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
+    background: #000;
+    border: 1px solid #000;
+    border-radius: .75rem ;
+    padding: 1rem 2rem;
+    margin-top:2rem ;
+}
+.left .btn_learn:hover{
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+}
+.left .sponsers{
+    padding-top: 5rem;
+}
+.left .sponsers ul{
+    display: flex;
+    gap: 1rem;
+}
+.right .hero_img{
+    width: 100%;
+    height: fit-content;
+}
+@media  (max-width:940px) {    
+    .hero{
+        padding: 0rem 0rem 0rem;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile_image{
+        display: block;
+       
+    }
+    .mobile_image img{
+        width: 100%;
+        height: 100%;
+    }
+    .left {
+        padding: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .right{
+        display:none;
+    }
+ }
+ @media  (max-width:375px){
+    .hero{
+        padding: 0rem 0rem 0rem;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap:0rem
+    }
+    .mobile_image{
+        display: block;
+       
+    }
+    .mobile_image img{
+        width: 100%;
+        height: 100%;
+    }
+    .right{
+        display:none;
+    }
+    .left {
+        padding-top: 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 0rem;
+    }
+    .left h1{
+        font-size: 2rem;
+        padding: 2rem 0rem .55rem;
+    }
+    .left p{
+        font-size: 1rem;
+    }
+    .left .sponsers{
+        padding-top: 2.5rem;
+    }
+    .left .sponsers ul{
+        gap: 0rem;
+    }
+    .left .sponsers ul li a img{
+        width: 70%;
+        height: fit-content\;
+    }
+ }
